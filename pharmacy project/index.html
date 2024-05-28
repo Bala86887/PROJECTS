@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Online Pharmacy</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+
+#navbarone>a{color: white;}
+#navbarone{display: flex;width: 80%;border: r solid 2px;margin: auto;position: fixed;margin-left: 100px;background-color:green;}
+.right{margin-left: 70px;margin-top: 20px;}
+span{border-left: 2px solid black;margin-left:25px ;}
+#download{margin-left: 400px;}
+#contact{margin-left: 35px;color: white;}
+
+#wrong{margin-left: 30px;color: white;}
+#cart{margin-left: 30px;color: white;}
+#download~i,a{margin-top: 20px;}
+a{text-decoration: none;}
+button{border: none;}
+#download~a:hover{border-bottom: 2px dashed black;}
+#download:hover{border-bottom: 2px dashed black;}
+.right>img{margin-top: 10px;}
+.right+p{margin-top: 17px}
+#two{border: redid 2px;margin-top: 15px;height: 50px;display: flex;position: fixed;width: 65%;margin: auto;justify-content: space-around;
+
+margin-top: 70px;margin-left: 170px;background-color: blue;color: white;
+}
+#navbars{height: 200px;width: 90%;border: een solid 2px;margin: auto;}
+
+#parentone{height: 400px;width: 90%;border:blsolid 2px;margin: auto;text-align: center;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;}
+#parentone>h1,p,h2{display: inline;}
+#parentone>input{width: 700px;border-radius: 30px;height: 50px;margin-top: 20px;}
+#parentone>h1{margin-right: 300px;}
+#parentone>h2{color:green}
+#parentone>#images>div{height: 250px;width: 200px;border: blsolid 2px;margin-left: 15px;}
+#parentone>#images>div>img{width: 100%;height: 80%;}
+#images>div>img+p+p{color: red;}
+#total{height: 650px;width: 100%;border: reolid 5px;}
+#style>div{border:bluid 2px;flex-grow: 1;height: 300px;margin-left: 15px;border-radius: 15px;}
+#style>div>img{height: 100%;width: 100%;border-radius: 15px;}
+
+#two>a:hover{background-color: yellow;}
+#two>a{display: block;font-size: 20px;color:white}
+#images>div:hover{box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+#check{height: 170px;width: 100%;border: pk solid 2px;margin-top: 20px;margin: auto;display: flex;margin-top: 20px;}
+#check>div{height: 170px;width: 150px;border: ue solid 2px;margin-left: 30px;}
+#check>div>a>img{height: 100%;width: 100%;}
+
+#containerone{display: flex;width: 90%;border:reen solid 2px;margin: auto;height: auto;margin-top: 15px;}
+#containerone>div{height: 315px;width: 600px;border: blue sod 2px;}
+#containerone>div>div>p>span{border: none;}
+
+
+#containertwo{display: flex;border: red sol 2px;margin: auto;margin-top: 15px;height: 210px;justify-content: space-around;width: 100%;}
+#containertwo>div{height: 200px;width: 300px;border: be solid 2px;margin-left: 15px;box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;}
+#containertwo>div>img{height: 100%;width: 100%;}
+#containertwo>div>a{font-size: 20px;}
+
+#containerthree{display: flex;height: 300px;border: d solid 2px;margin-top: 15px;width: 100%;justify-content: space-around;}
+#containerthree>div{height: 200px;width: 300px;border: ue solid 2px;margin-left: 20px;box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;}
+
+
+#containerthree>div>img{height: 100%;width: 100%;}
+
+
+#containerthree>div>img+p+p+p{text-decoration: overline;}
+
+#containerfour{display: flex;height: 300px;border: redolid 2px;margin-top: 15px;width: 100%;justify-content: space-around;}
+#containerfour>div{height: 200px;width: 300px;border: bl\ solid 2px;margin-left: 20px;box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;}
+#containerfour>div>img{height: 100%;width: 100%;}
+
+  
+#containerfive{display: flex;height: 250px;border: r solid 2px;margin-top: 15px;width: 100%;justify-content: space-around;}
+#containerfive>div{height: 200px;width: 300px;border: blusolid 2px;margin-left: 20px;box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;}
+  
+#containerfive>div>img{height: 100%;width: 100%;}
+  
+ 
+  
+#containersix{display: flex;height: 300px;border: red lid 2px;margin-top: 15px;width: 100%;justify-content: space-around;}
+#containersix>div{height: 200px;width: 300px;border: be solid 2px;margin-left: 20px;box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;}
+  
+#containersix>div>img{height: 100%;width: 100%;}
+  
+ #containerseven{display: flex;height: 300px;border: d 2px solid;margin-top: 15px;margin: auto;background-color: lightsteelblue;margin-top: 10px;}
+
+#containerseven>.one,.two{height: 100px;width: 400px;border: be solid 2px;margin-left: 10px;margin-top: 40px;text-align: center;padding-top: 30px;font-size: 25px;}
+#containerseven>.three{height: 220px;width: 250px;border: bl solid 2px;margin-left: 200px;margin-top: 70px;}
+#containerseven>.three>imh{height: 100%;width: 100%;}
+
+
+
+
+#containereight{display: flex;height: 500px;width: 90%;borderred solid 2px;margin: auto;margin-top: 15px;background-color: aquamarine;}
+#containereight>div{height: 400px;width: 600px;border: blusolid 2px;}
+#containereight>div>img{height: 100%;width: 100%;}
+
+#containereight>.one,.two{margin-top: 50px;}
+
+#containereight>.three{margin-left: 10px;}
+
+
+#parentnine{display: grid;grid-template-columns: repeat(4,1fr);
+    
+    grid-template-rows: repeat(17,40px);
+  
+  border: red lid 2px;
+  width: 70%;
+margin-top: 15px;
+margin: auto;
+margin-top: 20px;
+  }
+
+  </style>
+  
+
+
+</head>
+<body>
+  <div id="total">
+  <div id="navbars">
+  
+ <navbar id="navbarone">
+<a href="https://pharmeasy.in/"  target="_blank"><img style="background-color: white;" src="https://assets.pharmeasy.in/apothecary/images/logo_big.svg?dim=256x0"  alt="logo"></a>
+<span></span>
+<a href=""  class="right"><img src="https://assets.pharmeasy.in/apothecary/images/ic_express%20delivery.svg?dim=16x0" alt="location"></a>
+<p style="color: white;">Express delivery to<br>
+  400001 Mumbai</p>
+<a href="https://apps.apple.com/in/app/pharmeasy-healthcare-app/id982432643?mt=8" target="_blank" id="download"><button>Download App</button></a>
+<i id="contact" class="fa-solid fa-address-book"></i>
+<a href="https://pharmeasy.in/#login">Heloo,Log in</a>
+<i id="wrong" class="fa-solid fa-circle-xmark"></i>
+<a href="https://pharmeasy.in/offers?src=header">Offers</a>
+<i  id="cart" class="fa-solid fa-cart-shopping"></i>
+<a href="https://pharmeasy.in/cart?src=header">Cart</a>
+
+
+ </navbar>
+ 
+
+<navbar id="two">
+
+  
+    <a href="https://pharmeasy.in/online-medicine-order?src=homecard">Medicine</a>
+    <a href="https://pharmeasy.in/diagnostics?src=homecard">Lab Test</a>
+    <a href="https://pharmeasy.in/health-care?src=homecard">Healthcare</a>
+    <a href="https://pharmeasy.in/blog/">Health Blogs</a>
+    <a href="https://pharmeasy.in/plus?src=homecard">PLus</a>
+    <a href="https://pharmeasy.in/offers?src=homecard">Offers</a>
+    <a href="https://pharmeasy.in/health-care/9066?src=homecard">Value Store</a>
+    
+   
+<navbar>
+</div>
+ 
+<div id="parentone">
+
+  <h1>What are you looking for?</h1>
+<p>Order with prescription.</p>
+  <h2><a href="https://pharmeasy.in/upload-prescription?src=header" target="_blank">Update NOw></a></h2><br>
+  <input placeholder="search for"><br>
+  <div id="images" style="display: flex;justify-content: space-around;margin-top: 15px;">
+
+<div>
+  <img src="https://assets.pharmeasy.in/apothecary/images/medicine_ff.webp?dim=256x0" alt="">
+<p>Medicine</p><br>
+<p style="color: red;">UPTO 27% 0FF</p>
+</div>
+<div>
+  <img src="https://assets.pharmeasy.in/apothecary/images/labtest_ff.webp?dim=256x0" alt="">
+  <p>Lab Tests</p><br>
+<p style="color: red;">UOTO 70% OFF</p>
+</div>
+<div><img src="https://assets.pharmeasy.in/apothecary/images/healthcare_ff.webp?dim=256x0" alt="">
+<p>HealthCare</p><br>
+<p style="color: red;">UPTO 60% OFF</p>
+</div>
+<div>
+  <img src="https://assets.pharmeasy.in/apothecary/images/health_blogs_ff.webp?dim=256x0" alt="">
+  <P>Health Blogs</P>
+</div>
+<div>
+  <img src="https://assets.pharmeasy.in/apothecary/images/plus_ff.webp?dim=256x0" alt="">
+<p>PLUS</p><br>
+<p style="color: red;">Save 5% Extra</p>
+</div>
+<div><img src="https://assets.pharmeasy.in/apothecary/images/offers_ff.webp?dim=256x0" alt="">
+
+  <p>Offers</p>
+</div>
+<div><img src="https://assets.pharmeasy.in/apothecary/images/value_store.png?dim=256x0" alt="">
+<p>Value store</p><br>
+<p style="color: red;">UPTO 50% OFF</p>
+</div>
+
+<div>
+
+</div>
+</div>
+
+
+
+<div id="style" style="display:flex;height: 300px;border: red sd 2px;margin-top: 70px;">
+<div>
+  <img src="https://cdn01.pharmeasy.in/dam/banner/banner/96173370bef-BOGO_pe.jpg">
+</div>
+<div>
+  <img src="https://cdn01.pharmeasy.in/dam/banner/banner/6daa13c2968-Slipper-HP-size.jpg">
+</div>
+</div>
+
+
+
+<h1 style="border: 2px solired;margin-top: 20px;margin-left: 100px;">Lab Tests by Health Concern</h1>
+<div id="check">
+<div>
+  <a href="https://pharmeasy.in/diagnostics/diag_collection?id=113"><img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/4cb2baf3234-Fullbody.png?dim=256x0"></a>
+</div>
+<div>
+  <a href="https://pharmeasy.in/diagnostics/diag_collection/?id=34&title=Vitamins"><img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/e1a18d8deac-Vitamins.png?dim=256x0"></a>
+</div>
+<div>
+  <a href="https://pharmeasy.in/diagnostics/diag_collection/?id=46&title=Diabetes"><img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/1e927857c26-Diabetes.png?dim=256x0"></a>
+</div>
+<div>
+  <a href="https://pharmeasy.in/diagnostics/diag_collection?id=62"><img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/e1c60c444bf-Fever.png?dim=256x0"></a>
+</div>
+<div>
+  <a href="https://pharmeasy.in/diagnostics/diag_collection/?id=49&title=Women%20Care"><img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/7b238cdbb60-womencare.png?dim=256x0"></a>
+</div>
+<div>
+  <a href="https://pharmeasy.in/diagnostics/diag_collection?id=48&title=Thyroid"><img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/71fb3c06e71-Thyroid.png?dim=256x0"></a>
+</div>
+<div>
+
+  <a href="https://pharmeasy.in/diagnostics/diag_collection/?id=45&title=Covid%20Care"><img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/6b775dd8478-covid.png?dim=256x0"></a>
+</div>
+
+
+</div>
+
+
+
+
+<div id="containerone">
+
+<div style="box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;">
+<div style="height: 220px;width: 250px;border: resolid 2px;">
+<img style="height: 200px;width: 200px;" src="https://assets.pharmeasy.in/apothecary/images/rx_upload.svg?dim=1440x0"></div><br>
+<p style="font-size: 25px;color: black;">Order with Prescription<br>
+  Upload prescription and we will deliver your medicines</p>
+  <a href="https://pharmeasy.in/upload-prescription?src=header">  <button style="background-color: green;color: white;font-size: 20px;">UPLOAD</button></a>
+
+</div>
+<div style="height: 320px;width: 600px;border: blsolid 2px;">
+<div style="height: auto;width: auto;border: yelloolid 2px;margin-top: 70px;font-size: ;20px">
+<p style="padding-top: 50px;"> <span style="width: 3px;height: 5px;border:ed solid 2px;font-size: 25px;box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;">1.</span>Upload a photo of your prescription</p><br>
+<p><span style="width: 3px;height: 5px;border: red sol 2px;font-size: 25px;box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;">2.</span> Add delivery address and place the order</p><br>
+<p ><span style="width: 3px;border:none;height:  5px;border: resolid 2px;font-size: 25px;box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;">3.</span>We will call you to confirm the medicines</p><br>
+<p > <span style="width: 3px;height: 5px;border: resolid 2px;font-size: 25px;box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;">4.</span>Now, sit back! your medicines will get delivered at your doorstepShop by Categories</p>
+</div>
+  
+ 
+</div>
+
+
+</div>
+
+
+
+
+<div style="width:150x;height: 65px;bordered solid 2px;width: 20%;"><h1>Shop By Categories</h1></div>
+<div id="containertwo" style="width: 100%;">
+  <div>
+    <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/f10917087a483040b557e4b18204312c.png?f=png?dim=256x0">
+    <a href="https://pharmeasy.in/health-care/9297">Top Products</a>
+  </div>
+  <div>
+    <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/fa936f30b4563fc4abd187fb22fe5258.png?f=png?dim=256x0">
+    <a href="https://pharmeasy.in/health-care/750">Elderly Care</a>
+  </div>
+  <div>
+    <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/1e622b0308ec3ab48887512eaa3488a5.png?f=png?dim=256x0">
+    <a href="https://pharmeasy.in/health-care/877">Personal Care</a>
+  </div>
+  <div>
+    <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/9cc9a28ea4513009966cae794114eefd.png?f=png?dim=256x0">
+    <a href="https://pharmeasy.in/health-care/717">Health Care</a>
+  </div>
+  <div>
+    <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/335dae76832d370c94f0440f5ba89e1f.png?f=png?dim=256x0">
+<a href="https://pharmeasy.in/health-care/93">Skin Care</a>
+
+  </div>
+  <div>
+    <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/11315fee93053980af48fd871bf687b8.png?f=png?dim=256x0">
+    <a href="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/11315fee93053980af48fd871bf687b8.png?f=png?dim=256x0">Baby Care</a>
+  </div>
+  <div>
+    <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/11315fee93053980af48fd871bf687b8.png?f=png?dim=256x0">
+    <a href="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/514d0d7d01a63502b4ebfec9ae26f4d2.png?f=png?dim=256x0">Accessories</a>
+  </div>
+  <div>
+    <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/4405b7900b0b34fcb5c8572aae9d4b2e.png?f=png?dim=256x0">
+    <a>Material</a>
+  </div>
+</div>
+
+
+<div style="width:150x;height: 95px;border:redlid 2px;width: 20%;margin-top: 55px;"><h1>New Launches</h1>
+<p style="position:relative;">New wellness range just for you</p>
+
+</div>
+
+
+
+<div id="containerthree" style="width: 100%;display: flex;" >
+
+  <div>
+    <img src="https://cdn01.pharmeasy.in/dam/products_otc/Q58993/baidyanath-nagpur-dashmulamrita-450ml-for-vat-disease-2-1677244703.jpg?dim=1440x0">
+<p>Baidyanath Nagpur<br>Dahmulamrrita,450..</p><br>
+<p style="text-decoration: line-through;">MRP RS170.00</p><br>
+<p>RS 149.60(12%)</p>
+  </div>
+  <div>
+    <img src="https://cdn01.pharmeasy.in/dam/products_otc/C18874/pharmeasy-womens-diabetic-orthopedic-slippers-ebony-size-uk-5-6.1-1709288159.jpg?dim=1440x0">
+  <p>Pharmeasy Womens`s</p><br>
+  <P>Diabetic & Orthopedi...</P>
+  <p style="text-decoration: line-through;">MRP RS170.00</p><br>
+<p>RS 149.60(12%)</p>
+  
+  
+  </div>
+  <div>    
+    
+    <img src="https://cdn01.pharmeasy.in/dam/products_otc/T71975/amrutanjan-stop-itch-anti-fungal-powder-spray-bottle-of-100gm-2-1697103513.jpg?dim=1440x0">
+  
+    <p>Pharmeasy Womens`s</p><br>
+    <P>Diabetic & Orthopedi...</P>
+    <p style="text-decoration: line-through;">MRP RS170.00</p><br>
+  <p>RS 149.60(12%)</p>
+  
+  
+  </div>
+  <div>
+    <img src="https://cdn01.pharmeasy.in/dam/products_otc/U50792/fixderma-shadow-sunscreen-spf-50-cream-for-dry-skin-with-pa-protection-40g-2-1701761584.jpg?dim=1440x0">
+    <p>Pharmeasy Womens`s</p><br>
+    <P>Diabetic & Orthopedi...</P>
+    <p style="text-decoration: line-through;">MRP RS170.00</p><br>
+  <p>RS 149.60(12%)</p>
+  
+  </div>
+  <div>
+    <img src="https://cdn01.pharmeasy.in/dam/products_otc/P37415/glucon-d-regular-powder-450-g-free-50-g-box-2-1709381988.jpg?dim=1440x0">
+ 
+    <p>Pharmeasy Womens`s</p><br>
+    <P>Diabetic & Orthopedi...</P>
+    <p style="text-decoration: line-through;">MRP RS170.00</p><br>
+  <p>RS 149.60(12%)</p>
+ 
+ 
+  </div>
+  <div>
+    <img src="https://cdn01.pharmeasy.in/dam/products_otc/M09839/cetaphil-moisturizing-lotion-100-ml-pack-of-3-2-1671743874.jpg?dim=1440x0">
+    <p>Pharmeasy Womens`s</p><br>
+    <P>Diabetic & Orthopedi...</P>
+    <p style="text-decoration: line-through;">MRP RS170.00</p><br>
+  <p>RS 149.60(12%)</p>
+  
+  
+  </div>
+<div>
+  <img src="https://cdn01.pharmeasy.in/dam/products_otc/F80229/adroit-glutone-serum-for-skin-glow-radiance-30ml-2-1671743447.jpg?dim=1440x0">
+
+
+  <p>Pharmeasy Womens`s</p><br>
+  <P>Diabetic & Orthopedi...</P>
+  <p style="text-decoration: line-through;">MRP RS170.00</p><br>
+<p>RS 149.60(12%)</p>
+
+
+
+
+</div>
+</div>
+
+
+<div style="width: 300px;height: 130px;border: rd solid 2px;margin-top: 20px;">
+<h1>Trending Near You</h1>
+<p>Popular in your city</p>
+</div>
+
+
+<div id="containerfour">
+
+<div>
+<img src="https://cdn01.pharmeasy.in/dam/products_otc/T22634/liveasy-wellness-calcium-magnesium-vitamin-d3-zinc-bones-dental-health-bottle-60-tabs-2-1661760061.jpg?dim=1440x0">
+<p>Liveasy welliness<br>Calcium Magnesiu,..</p><br>
+<p style="text-decoration: line-through;">MRP RS170.00</p><br>
+<p>RS 149.60(12%)</p>
+</div>
+<div>
+<img src="https://cdn01.pharmeasy.in/dam/products_otc/L79986/everherb-karela-jamun-juice-helps-maintains-healthy-sugar-levels-helps-in-weight-management-1l-2-1698385993.jpg?dim=1440x0">
+<p>Everherb Karea<br>juice Helps..</p><br>
+<p style="text-decoration: line-through;">MRP RS170.00</p><br>
+<p>RS 149.60(12%)</p>
+</div>
+<div>
+  <img src="https://cdn01.pharmeasy.in/dam/products_otc/159115/shelcal-500mg-strip-of-15-tablets-2-1679999355.jpg?dim=1440x0">
+  <p>Sheical 500mg<br>15,Tablets..</p><br>
+<p style="text-decoration: line-through;">MRP RS170.00</p><br>
+<p>RS 149.60(12%)</p>
+</div>
+<div>
+  <img src="https://cdn01.pharmeasy.in/dam/products_otc/S04683/evion-400mg-strip-of-20-capsule-2-1683208555.jpg?dim=1440x0">
+  <p>Even 500mg<br>20,capsule..</p><br>
+<p style="text-decoration: line-through;">MRP RS170.00</p><br>
+<p>RS 149.60(12%)</p>
+</div>
+<div>
+  <img src="https://cdn01.pharmeasy.in/dam/products_otc/D52223/liveasy-foods-healthy-roasted-seed-mix-blend-of-6-fibre-rich-healthy-roasted-seeds-200-gms-2-1656420865.jpg?dim=1440x0">
+  <p>Food Healthy<br>Roatsed,seed mix..</p><br>
+  <p style="text-decoration: line-through;">MRP RS170.00</p><br>
+  <p>RS 149.60(12%)</p>
+
+</div>
+<div>
+  <img src="https://cdn01.pharmeasy.in/dam/products_otc/I05582/dr-morepen-gluco-one-bg-03-glucometer-test-strips-box-of-50-1-1669655233.jpg?dim=1440x0">
+  <p>Baidyanath Nagpur<br>Dahmulamrrita,450..</p><br>
+  <p style="text-decoration: line-through;">MRP RS170.00</p><br>
+  <p>RS 149.60(12%)</p>
+
+</div>
+<div>
+  <img src="https://cdn01.pharmeasy.in/dam/products_otc/K78780/pharmeasy-pill-box-organizer-2-1690272738.jpg?dim=1440x0">
+
+  <p>DR .morepen Gluco<br>Bg o3,glucometer..</p><br>
+  <p style="text-decoration: line-through;">MRP RS170.00</p><br>
+  <p>RS 149.60(12%)</p>
+</div>
+
+
+</div>
+
+
+    
+  
+<div style="width: 300px;height: 100px;border: reolid 2px;margin-top: 20px;">
+  <h1>Feautured Brands</h1>
+  <p>Pick from our favourite brands</p></div>
+
+  <div id="containerfive">
+
+    <div>
+      <img src="https://cms-contents.pharmeasy.in/carousel_item/c9fc0cd6ef6-Revital-min.png?dim=1440x0">
+      <p>Recital</p>
+    </div>
+    <div>
+      <img src="https://cms-contents.pharmeasy.in/carousel_item/548b3d95683-I-pill.jpg?dim=1440x0">
+      <p>I Range</p>
+    </div>
+    <div>
+      <img src="https://cms-contents.pharmeasy.in/carousel_item/38d56bb7fc4-BontressFB.png?dim=1440x0">
+      <p>Bontreas</p>
+    </div>
+    <div>
+      <img src="https://cms-contents.pharmeasy.in/carousel_item/f067321201c-1.png?dim=1440x0">
+      <p>Pharmeasy</p>
+    </div>
+    <div>
+      <img src="https://cms-contents.pharmeasy.in/carousel_item/8ad7775c085-3.png?dim=1440x0">
+      <p>Nicoten</p>
+    </div>
+    <div>
+      <img src="https://cms-contents.pharmeasy.in/carousel_item/d913aaa3095-4.png?dim=1440x0">
+      <p>Diaxel</p>
+    </div>
+    <div>
+      <img src="https://cms-contents.pharmeasy.in/carousel_item/40facc7fa28-Pharmeasy-App.jpg?dim=1440x0">
+      <p>MNC</p>
+    </div>
+    
+    
+    </div>
+    
+
+
+ 
+    <div style="width: 300px;height: 70px;border: resolid 2px;margin-top: 20px;">
+      <h1>Deals Of The Day</h1>
+      </div>
+    
+      <div id="containersix">
+    
+        <div>
+          <img src="https://cdn01.pharmeasy.in/dam/products_otc/T84523/nycil-germ-expert-cool-herbal-prickly-heat-cooling-powder-150g-50g-cool-herbal-free-2-1705998834.jpg?dim=1440x0">
+        
+          <p>Food Healthy<br>Roatsed,seed mix..</p><br>
+          <p style="text-decoration: line-through;">MRP RS170.00</p><br>
+          <p>RS 149.60(12%)</p>
+        </div>
+        <div>
+          <img src="https://cdn01.pharmeasy.in/dam/products_otc/B59942/cerave-moisturizing-cream-for-dry-to-very-dry-skin-340gm-6.01-1701425576.jpg?dim=1440x0">
+          <p>Food Healthy<br>Roatsed,seed mix..</p><br>
+          <p style="text-decoration: line-through;">MRP RS170.00</p><br>
+          <p>RS 149.60(12%)</p>
+        
+        </div>
+        <div>
+          <img src="https://cdn01.pharmeasy.in/dam/products_otc/S98851/liveasy-surgical-absorbent-cotton-role-500gm-net-2-1691062225.jpg?dim=1440x0">
+          <p>Food Healthy<br>Roatsed,seed mix..</p><br>
+          <p style="text-decoration: line-through;">MRP RS170.00</p><br>
+          <p>RS 149.60(12%)</p>
+        
+        </div>
+        <div>
+          <img src="https://cdn01.pharmeasy.in/dam/products_otc/055866/diataal-d-multivitamin-with-vitamin-d-for-heart-health-strong-bones-immunity-health-10-capsules-6.1-1707900348.jpg?dim=1440x0">
+          <p>Food Healthy<br>Roatsed,seed mix..</p><br>
+          <p style="text-decoration: line-through;">MRP RS170.00</p><br>
+          <p>RS 149.60(12%)</p>
+        
+        
+        </div>
+        <div>
+        <img src="https://cdn01.pharmeasy.in/dam/products_otc/105630/listerine-coolmint-mouthwash-bottle-of-250-ml-2-1671740940.jpg?dim=1440x0">
+        <p>Food Healthy<br>Roatsed,seed mix..</p><br>
+  <p style="text-decoration: line-through;">MRP RS170.00</p><br>
+  <p>RS 149.60(12%)</p>
+        </div>
+        <div>
+          <img src="https://cdn01.pharmeasy.in/dam/products_otc/H34385/littles-comfy-baby-pants-diapers-with-wetness-indicator-and-12-hours-absorption-small-42-pants-2-1671741631.jpg?dim=1440x0">
+          <p>Food Healthy<br>Roatsed,seed mix..</p><br>
+          <p style="text-decoration: line-through;">MRP RS170.00</p><br>
+          <p>RS 149.60(12%)</p>
+        
+        </div>
+        <div>
+          <img src="https://cdn01.pharmeasy.in/dam/products_otc/R67145/littles-comfy-baby-pants-diapers-with-wetness-indicator-and-12-hours-absorption-large-30-pants-2-1670588532.jpg?dim=1440x0">
+          <p>Food Healthy<br>Roatsed,seed mix..</p><br>
+          <p style="text-decoration: line-through;">MRP RS170.00</p><br>
+          <p>RS 149.60(12%)</p>
+        
+        </div>
+        
+ 
+        </div>
+
+
+
+        <div id="containerseven">
+
+<div class="one">
+  <p>Become a<span style="color: yellow;border: none;font-size: 30px;">+ plus</span> Member</p>
+</div>
+<div class="two">
+  <p>Save 5% On Medicines & get Free Delevery ,Explore immediatly</p>
+</div><br>
+
+<div class="three">
+  <img src="https://assets.pharmeasy.in/apothecary/_next/static/media/PlusFamily.22677720.png?dim=1440x0">
+</div>
+
+
+        </div>
+<div id="containereight">
+
+<div class="one">
+  <img src="https://assets.pharmeasy.in/apothecary/images/downloadBanner.webp?dim=1440x0&q=100">
+</div>
+<div class="two">
+  <h1>Simplifying</h1>
+<h1>HeaihCare</h1>
+<h1>Impacting Lives</h1>
+<img src="https://assets.pharmeasy.in/apothecary/images/googlePlay.svg?dim=256x0"  style="width: 100px;height: 100px;">
+</div>
+<div class="three">
+  <img src="https://assets.pharmeasy.in/apothecary/images/downloadBanner.webp?dim=1440x0&q=100">
+</div>  
+</div>
+ 
+<div id="parentnine" style="background-color: aquamarine;">
+  <div style="font-size: 25px;color: black;">Company</div>
+  <div style="font-size: 25px;color: black;">Featured Categories</div>
+  <div style="font-size: 25px;color: black;">Need Help</div>
+  <div style="font-size: 25px;color: black;">Follow Us On</div>
+  <div>About us</div>
+  <div>Top Products</div>
+  <div>Browse All Medicines</div>
+  <div>
+<img src="https://assets.pharmeasy.in/apothecary/images/Instagram.svg?dim=32x0">
+<img src="https://assets.pharmeasy.in/apothecary/images/facebook.svg?dim=32x0">
+<img src="https://assets.pharmeasy.in/apothecary/images/Youtube.svg?dim=32x0">
+<img src="https://assets.pharmeasy.in/apothecary/images/Twitter.svg?dim=32x0">
+  </div>
+  <div>Careers</div>
+  <div>Elderly Care</div>
+  <div>Browse All Molecule</div>
+  <div></div>
+  <div>Blog</div>
+  <div>Personal Care</div>
+  <div>Browse All cities</div>
+  <div></div>
+  <div>Partner with PharmEasy</div>
+  <div>HealthCare Devices</div>
+  <div>Browse All Areas</div>
+  <div></div>
+  <div>sell at PharmEasy</div>
+  <div>Health &Fodd Drinks</div>
+  <div>Browse All Stories</div>
+  <div></div>
+  <div style="color: black;font-size: 20px;">Our Services</div>
+  <div>SkinCare</div>
+  <div>FAQ S</div>
+  <div></div>
+  <div>Order Medicine</div>
+  <div>Mother & Baby Care</div>
+  <div></div>
+  <div></div>
+  <div>Heailcare Products</div>
+  <div>Acessories </div>
+  <div style="color: black;font-size: 20px;">Policy Info</div>
+  <div></div>
+  <div>Lab Tests</div>
+  <div>Fitness Supplements</div>
+  <div>Editorial Policy</div>
+  <div></div>
+  <div>Find nearest Collection Centre</div>
+  <div>Ayurvedi care</div>
+  <div>Privacy Policy</div>
+  <div></div>
+  <div></div>
+  <div>Sexual WellNess</div>
+  <div>Vernalability Disclosure Policy</div>
+  <div></div>
+  <div></div>
+  <div>Diabetic Care</div>
+  <div>Terms &Conditions</div>
+  <div></div>
+  <div></div>
+  <div>Health Condition</div>
+  <div>Customer Support Policy</div>
+  <div></div>
+  <div></div>
+  <div>Trending Produts</div>
+  <div>Return Policy</div>
+  <div></div>
+  <div></div>
+  <div>Surgerical Dressings</div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+  
+</div>
+</body>
+</html>

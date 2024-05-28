@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>image gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <style>
+*{padding: 0;margin: 0;}
+   #menu{font-size: 40px;margin-left: 20px;padding-top: 20px;color: white;} 
+   #jiomart{font-size: 30px;margin-left: 10px;padding-top: 20px;color:white}
+#location{font-size: 15x;border-radius: 15px; width: 300px;margin-left: 20px;}
+#input{width: 250px;height: 30px;border-radius: 15px;margin-left: 300px;margin-top: 20px}
+#cart{font-size: 40px;padding-top: 20px;color:white}
+#signin{font-size: 30px;margin-left: 60px;padding-top: 23px;color:white}
+#parentone{display: flex;border: r solid 2px;width: 80%;margin: auto;height: 80px;}
+    #parentfirst{display: flex;border: gen 2px solid;background-color:blue}
+   #parenttwo{height: 30px;display: block;bordered 2px solid;
+  width: 75%;margin: auto;
+  }
+   #parenttwo>a{margin-left: 17px;padding-top:20px; color:white;font-size: 20px;text-decoration:  none;}
+   #parentsecond{border:be solid 2px;display: flex;background-color:darkgray;}
+  
+   #images{margin-top: 20px;}
+   #imagestwo{display: flex;border: re 2px solid;justify-content: space-around;}
+   #imagestwo>div{border: ue 2px solid}
+   #imagestwo>div>p{text-align: center;font-size: 20px;color: black;}
+   #imagesthree>img{margin-left:220px;}
+   #hundred{width: 100%;}
+   #imagesfour{display: grid;grid-template-columns: repeat(6,auto);
+  
+  grid-template-rows: repeat(3,auto);}
+  #imagesfive{display: flex;border: re2px solid;height: 500px;}
+  #imagesfive>img{width: 500px;height: 300px;margin-left: 15px;}
+   </style>
+</head>
+<body>
+  <div id="parentfirst">
+  <div id="parentone">
+  <i  class="fa-solid fa-bars" id="menu"></i>
+  <p id="jiomart">JioMart</p>  
+  <button id="location"><i class="fa-solid fa-location-dot"></i>  Deliver to Mumbai 400020</button> 
+    <input placeholder="Search JioMart" id="input" >
+    <i class="fa-sharp fa-solid fa-cart-shopping" id="cart"></i>
+<p id="signin"><i class="fa-solid fa-address-book"></i>sign in</p>
+    </div>
+  </div>
+<div id="parentsecond">
+  <div id="parenttwo">
+<a href="https://www.jiomart.com/c/groceries/2">Groceries</a>
+<a href="https://www.jiomart.com/c/premiumfruits/6047">Premium Fruits</a>
+<a href="https://www.jiomart.com/c/homeandkitchen/8582">Home$Kitchen</a>
+<a href="https://www.jiomart.com/c/fashion/3">Fashion</a>
+<a href="https://www.jiomart.com/c/electronics/4">Electronics</a>
+<a href="https://www.jiomart.com/c/beauty/5">Beauty</a>
+
+<a href="https://www.jiomart.com/c/jewellery/1524">Jewellery</a>
+<a href="https://www.jiomart.com/c/homeimprovement/8583">Home Improvement</a>
+<a href="https://www.jiomart.com/c/sportstoysluggage/8584">Sports,Toys& Luggage</a>
+</div>
+
+</div>
+<img  id="images">
+
+<a href="https://www.jiomart.com/7-max-saving-days"><img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1709202000_1680.jpg?im=Resize=(1680,320)"></a>
+<div id="imagestwo">
+
+</div>
+
+<div id="imagesthree">
+
+</div>
+<img id="hundred" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1708945475_home_page_1240x209.jpg?im=Resize=(1240,150)">
+
+<div id="imagesfour">
+
+
+
+</div>
+<a href="https://www.jiomart.com/ramadan-product"><img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1709216703_marathi.jpg?im=Resize=(1680,320)"></a>
+<div id="imagesfive">
+  
+<img id="fone" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1709208145_Refreshing_Summers_With_Chikankari_Desktop.jpg?im=Resize=(1680,320)">
+<img id="ftwo" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1709208218_Grab_Your_Favorites_On_Sale_Desktop.jpg?im=Resize=(1680,320)">
+<img  id=fthree src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1709208425_Lingerie_and_Comfortwear_Desktop.jpg?im=Resize=(1680,320)">
+
+</div>
+
+
+
+
+</body>
+<script>
+  let image=document.getElementById("images")
+  let array=[
+
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1709446732_Biscuits.jpg?im=Resize=(1680,320)",
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1709659370_mahashivratri.jpg?im=Resize=(1680,320)",
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1709446863_societytea.jpg?im=Resize=(1680,320)",
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1709617494_basmatirice_desktop.jpg?im=Resize=(1680,320)",
+
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1709531192_Soaps.jpg?im=Resize=(1680,320)"
+]  
+
+ 
+
+
+    image.setAttribute("src",array[0])
+   let imagenumber=0
+setInterval(()=>{
+
+
+  image.setAttribute("src",array[imagenumber])
+  imagenumber++
+  if(imagenumber==array.length){
+
+    imagenumber=0
+
+  }
+
+},2000)
+  let arraytwo=[{image:"https://www.jiomart.com//images/product/original/600520461/saffola-gold-rice-bran-based-blended-oil-3-l-india-gate-regular-choice-basmati-rice-5-kg-product-images-o600520461-p590314197-0-202311281729.jpg?im=Resize=(150,150)",para:"Saffola ",rupees:"rs 749"},
+  {image:"https://www.jiomart.com//images/product/original/490004177/mirinda-orange-2-25-l-product-images-o490004177-p490004177-0-202203151914.jpg?im=Resize=(150,150)",para:"Mirinda Orange",rupees:"rs 64"},
+  {image:"https://www.jiomart.com//images/product/original/491319789/sunfeast-dark-fantasy-original-choco-filled-cookie-300-g-product-images-o491319789-p491319789-0-202308152343.jpg?im=Resize=(150,150)",para:"sufeast Dark Fnatasy",rupees:"rs 98"},
+  {image:"https://www.jiomart.com//images/product/original/490005200/7up-2-25-l-product-images-o490005200-p490005200-0-202210201751.jpg?im=Resize=(150,150)",para:"7up",rupees:"rs 64"},
+  {image:"https://www.jiomart.com//images/product/original/490001795/maaza-mango-drink-1-2-l-product-images-o490001795-p490001795-0-202301272130.jpg?im=Resize=(150,150)",para:"Pepsi",rupees:"rs 64"},
+  {image:"https://www.jiomart.com//images/product/original/491161888/britannia-good-day-cashew-cookies-600-g-product-images-o491161888-p491161888-0-202308160051.jpg?im=Resize=(150,150)",para:"Brittania Good",rupees:"rs 81"},
+  {image:"https://www.jiomart.com//images/product/original/492577967/parle-hide-seek-chocolate-chip-cookies-400-g-product-images-o492577967-p590836230-0-202203150106.jpg?im=Resize=(150,150)",para:"Parle Hide&Seek",rupees:"rs 90"},
+  {image:"https://www.jiomart.com//images/product/original/490000243/cadbury-dairy-milk-fruit-nut-chocolate-bar-36-g-product-images-o490000243-p490000243-0-202203171027.jpg?im=Resize=(150,150)",para:"Cadbury Dairy Milk",rupees:"rs 41"}
+  
+  ]
+
+  let images2=document.getElementById("imagestwo")
+  for(let i=0;i<arraytwo.length;i++){
+let c1=document.createElement("img")
+c1.setAttribute("src",arraytwo[i].image)
+let c2=document.createElement("p")
+c2.innerText=arraytwo[i].para
+let c3=document.createElement("p")
+c3.innerText=arraytwo[i].rupees
+let c4=document.createElement("div")
+c4.append(c1,c2,c3)
+  images2.append(c4)
+  }
+
+  let arraythree=[
+    "https://www.jiomart.com/images/cms/aw_rbslider/slides/1709568987_ICICI_CC_1240x209.jpg?im=Resize=(1241,195)",
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1709199540_BOB_1240x209.jpg?im=Resize=(1241,195)",
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1709199583_AU_Bank_1240x209.jpg?im=Resize=(1241,195)",
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1709199609_MobiKwik_1240x209.jpg?im=Resize=(1241,195)",
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1709199633_TWID_New_1240x209.jpg?im=Resize=(1241,195)",
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1709199689_Simple_1240x209.jpg?im=Resize=(1241,195)",
+
+  ]
+  let three=document.getElementById("imagesthree")
+let getone=document.createElement("img")
+getone.setAttribute("src",arraythree[0])
+three.append(getone)
+
+
+let num=1
+setInterval(() => {
+  num++
+  if(num>=5){
+    getone.setAttribute("src",arraythree[0])
+    
+    three.append(getone)
+  }
+
+  
+  
+  else{
+  getone.setAttribute("src",arraythree[num])
+  three.append(getone)}
+}, 1000);
+let arrayfour=[
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1709224892_Oil_and_Masala.jpg?im=Resize=(223,280)",
+
+
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1709224949_Dry_Fruits_and_Nuts.jpg?im=Resize=(223,280)",
+
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1709225094_Food__Beverage_and_Dairy.jpg?im=Resize=(223,280)",
+
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1709225139_Cleaning_EssentialsM.jpg?im=Resize=(223,280)",
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1709225139_Cleaning_EssentialsM.jpg?im=Resize=(223,280)",
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1709225192_Beauty_and_Personal_Care.jpg?im=Resize=(223,280)",
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1709225306_Mom_and_Baby.jpg?im=Resize=(223,280)",
+
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1709225457_Indian_Sweets.jpg?im=Resize=(223,280)",
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1707933166_Headphones_and_soundbar.jpg?im=Resize=(223,280)",
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1707932326_Television.jpg?im=Resize=(223,280)",
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1707932345_Laptops_and_tablets.jpg?im=Resize=(223,280)",
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1709646689_Kitchen_and_Appliances.jpg?im=Resize=(223,280)",
+
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1709225859_Mens_fashion.jpg?im=Resize=(223,280)",
+
+
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1709225903_Womens_fashion.jpg?im=Resize=(223,280)",
+
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1709225943_Kids_fashion.jpg?im=Resize=(223,280)",
+
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1709576983_Festive_Pooja_Needs.jpg?im=Resize=(223,280)",
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1709226235_Luggage.jpg?im=Resize=(223,280)",
+
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1708576126_Karigari_Bedsheets.jpg?im=Resize=(223,280)"
+
+
+
+
+
+
+]
+let getfour=document.getElementById("imagesfour")
+for(let i=0;i<arrayfour.length;i++){
+let fc1=document.createElement("img")
+fc1.setAttribute("src",arrayfour[i])
+let fc2=document.createElement("a")
+fc2.append(fc1)
+getfour.append(fc2)
+}
+
+let arrayfive=[
+
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1709208145_Refreshing_Summers_With_Chikankari_Desktop.jpg?im=Resize=(1680,320)",
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1709208218_Grab_Your_Favorites_On_Sale_Desktop.jpg?im=Resize=(1680,320)",
+"https://www.jiomart.com/images/cms/aw_rbslider/slides/1709208425_Lingerie_and_Comfortwear_Desktop.jpg?im=Resize=(1680,320)"
+
+
+]
+let fone=document.getElementById("fone")
+let ftwo=document.getElementById("ftwo")
+let fthree=document.getElementById("fthree")
+
+setInterval(()=>{
+
+fone.setAttribute("src",array[2])
+
+
+
+ftwo.setAttribute("src",array[2])
+
+
+fthree.setAttribute("src",array[2])
+
+
+
+
+})
+</script>
+</html>
